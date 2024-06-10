@@ -3,6 +3,7 @@ import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from "
 import FormInput from "../form-input"
 import './sign-up-form.styles.scss'
 import Button from "../button"
+
 const defaultFormFields = {
     displayName: '',
     email: '',

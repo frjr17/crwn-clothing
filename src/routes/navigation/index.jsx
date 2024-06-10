@@ -1,7 +1,13 @@
 import { Link, Outlet } from "react-router-dom";
 import { ReactComponent as CrwnLogo } from '../../assets/crown.svg';
 import './navigation.styles.scss';
+import { useContext } from "react";
+import { UserContext } from "../../contexts/user";
+import { signOutUser } from "../../utils/firebase";
+
 export default function Navigation() {
+    const { currentUser } = useContext(UserContext)
+
 
     return (
         <>
@@ -14,9 +20,15 @@ export default function Navigation() {
                     <Link className="nav-link" to="/shop">
                         SHOP
                     </Link>
-                    <Link className="nav-link" to="/auth">
-                        SIGN
-                    </Link>
+                    {
+                        currentUser ?
+                            <span onClick={signOutUser} className="nav-link">SIGN OUT</span>
+                            :
+                            <Link className="nav-link" to="/auth">
+                                SIGN IN
+                            </Link>
+                    }
+
                 </div>
             </div>
             <Outlet />
