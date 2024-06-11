@@ -3,16 +3,8 @@ import './App.css';
 import Home from './routes/home';
 import Navigation from './routes/navigation';
 import Authentication from './routes/authentication';
+import Shop from './routes/shop';
 
-const Shop = () => {
-  return (
-    <div>
-      <div>
-        <h1>I am the shop</h1>
-      </div>
-    </div>
-  );
-}
 
 
 function App() {
