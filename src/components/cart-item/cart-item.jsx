@@ -6,7 +6,7 @@ export default function CartItem({ cartItem }) {
             <img src={imageUrl} alt={name} />
             <div className="item-details">
                 <span className="name">{name}</span>
-                <span className='price'>{quantity} x ${price}</span>
+                <span className='price'>{quantity} x ${price.toFixed(2)}</span>
             </div>
         </div>
     )
