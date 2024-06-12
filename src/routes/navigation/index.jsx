@@ -5,12 +5,12 @@ import { useContext } from "react";
 import { UserContext } from "../../contexts/user";
 import { signOutUser } from "../../utils/firebase";
 import CartIcon from "../../components/cart-icon";
-import CartDropdown from "../../components/cart-dropdown/cart-dropdown";
+import CartDropdown from "../../components/cart-dropdown";
+import { CartContext } from "../../contexts/cart";
 
 export default function Navigation() {
     const { currentUser } = useContext(UserContext)
-    const { isCartOpen } = useContext(UserContext)
-
+    const { isCartOpen } = useContext(CartContext)
     return (
         <>
             <div className="navigation">
