@@ -46,11 +46,3 @@ export const RemoveButton = styled.div`
   cursor: pointer;
 `;
 
-export default {
-  CheckoutItemContainer,
-  ImageContainer,
-  Name,
-  Quantity,
-  Price,
-  RemoveButton,
-};
