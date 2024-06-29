@@ -22,6 +22,7 @@ export const ProductCardContainer = styled.div`
     margin: auto;
     top: 255px;
     display: none;
+    font-size: 12px;
   }
 
   &:hover {
@@ -46,4 +47,4 @@ export const ProductCardContainer = styled.div`
       margin-bottom: 15px;
     }
   }
-};`
+;`

@@ -15,7 +15,6 @@ export const NavigationContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
-  }
   `
 
 export const NavLinksContainer = styled.div`
