@@ -2,6 +2,7 @@ import CheckoutItem from '../../components/checkout-item'
 import { CheckoutContainer, CheckoutHeader, HeaderBlock, Total } from './checkout.styles.js'
 import { selectCartItems, selectCartTotal } from '../../store/cart/selectors.js'
 import { useSelector } from 'react-redux'
+import PaymentForm from '../../components/payment-form/index.jsx'
 
 
 export default function Checkout() {
@@ -24,7 +25,7 @@ export default function Checkout() {
                 })
             }
             <Total className="total">Total: ${cartTotal.toFixed(2)}</Total>
-
+            <PaymentForm />
         </CheckoutContainer>
     )
 }
